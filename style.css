@@ -1,0 +1,175 @@
+/* Box Sizing & Reset */
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Base Body Styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f9;
+}
+
+/* Container Layout */
+.container {
+    width: 92%;
+    max-width: 1200px;
+    margin: 20px auto;
+}
+
+/* Responsive Images */
+.responsive-img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-top: 3px;
+    border-radius: 2px;
+}
+
+/* Header & Navigation (Mobile-First Layout) */
+.site-header {
+    background-color: #2c3e50;
+    color: #fff;
+    padding: 15px 5%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.site-nav {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* Element & Pseudo-class Selectors with Hover/Focus States */
+.site-nav a {
+    color: #ecf0f1;
+    text-decoration: none;
+    padding: 6px 12px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.site-nav a:hover,
+.site-nav a:focus {
+    background-color: #74506c;
+    color: #3498db;
+    outline: none;
+}
+
+/* Sections Box Model Styling */
+.content-section {
+    background: #fff;
+    padding: 25px;
+    margin-bottom: 25px;
+    border: 1px solid #dcdcdc;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.content-section h2 {
+    margin-bottom: 15px;
+    color: #2c3e50;
+}
+
+/* Flexbox Cards Layout */
+.cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.card {
+    flex: 1 1 260px;
+    background: #f9f9fb;
+    padding: 20px;
+    border: 1px solid #dcdcdc;
+    border-radius: 6px;
+}
+
+.card h3 {
+    color: #2980b9;
+    margin-bottom: 10px;
+}
+
+/* Table Styling */
+.table-wrapper {
+    overflow-x: auto;
+}
+
+.styled-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+.styled-table th, .styled-table td {
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+.styled-table th {
+    background-color: #2c3e50;
+    color: white;
+}
+
+/* Form Styling */
+.styled-form .form-group {
+    margin-bottom: 15px;
+}
+
+.styled-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.styled-form input, 
+.styled-form select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.submit-btn {
+    background-color: #2980b9;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.submit-btn:hover {
+    background-color: #1abc9c;
+}
+
+/* Footer */
+.site-footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #2c3e50;
+    color: #fff;
+    margin-top: 40px;
+}
+
+/* Media Query for Responsive Adaptation (Min-width: 768px) */
+@media (min-width: 768px) {
+    .site-header {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .site-nav {
+        flex-direction: row;
+        align-items: center;
+        gap: 15px;
+    }
+}

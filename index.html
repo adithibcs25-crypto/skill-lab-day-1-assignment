@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My full stack project</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Responsive Header & Navigation Section -->
+    <header class="site-header">
+        <h1>My Full Stack Project</h1>
+        <nav class="site-nav">
+            <a href="#profile">Profile</a>
+            <a href="#courses">Courses</a>
+            <a href="#timetable">Timetable</a>
+            <a href="#registration" class="nav-btn">Register</a>
+        </nav>
+    </header>
+
+    <!-- Main Container -->
+    <main class="container">
+        
+        <!-- Student Profile Section -->
+        <section id="profile" class="content-section">
+            <h2>Student Profile</h2>
+            <p>Welcome to the official student web portal. This page provides a comprehensive overview of your academic profile, enrolled subjects, and weekly schedules.</p>
+            <img src="logo.png"
+     alt="Profile placeholder image representing the student"
+     class="responsive-img">
+           
+        </section>
+
+        <!-- Course List Section (Flexbox Cards) -->
+        <section id="courses" class="content-section">
+            <h2>Enrolled Courses</h2>
+            <div class="cards-container">
+                <article class="card">
+                    <h3>Full Stack Web Dev</h3>
+                    <p>Learn HTML5, CSS3, Flexbox, and responsive design principles.</p>
+                </article>
+                <article class="card">
+                    <h3>Database Systems</h3>
+                    <p>Understand relational models, SQL queries, and data management.</p>
+                </article>
+                <article class="card">
+                    <h3>Data Structures</h3>
+                    <p>Master core algorithms, complexity analysis, and problem-solving.</p>
+                </article>
+            </div>
+        </section>
+
+        <!-- Timetable Section (Table) -->
+        <section id="timetable" class="content-section">
+            <h2>Weekly Class Timetable</h2>
+            <div class="table-wrapper">
+                <table class="styled-table">
+                    <caption>Schedule for Current Semester</caption>
+                    <thead>
+                        <tr>
+                            <th>Day</th>
+                            <th>Course</th>
+                            <th>Time Slot</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Monday</td>
+                            <td>Full Stack Web Development</td>
+                            <td>10:00 AM - 12:00 PM</td>
+                        </tr>
+                        <tr>
+                            <td>Wednesday</td>
+                            <td>Database Management Systems</td>
+                            <td>02:00 PM - 04:00 PM</td>
+                        </tr>
+                        <tr>
+                            <td>Friday</td>
+                            <td>Data Structures and Algorithms</td>
+                            <td>09:00 AM - 11:00 AM</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- Registration Form Section -->
+        <section id="registration" class="content-section">
+            <h2>Course Registration Form</h2>
+            <form action="#" method="POST" class="styled-form">
+                <div class="form-group">
+                    <label for="fullname">Full Name:</label>
+                    <input type="text" id="fullname" name="fullname" required placeholder="Enter your full name">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required placeholder="student@example.com">
+                </div>
+                <div class="form-group">
+                    <label for="course-select">Select Course:</label>
+                    <select id="course-select" name="course">
+                        <option value="web-dev">Full Stack Web Development</option>
+                        <option value="dbms">Database Management Systems</option>
+                        <option value="dsa">Data Structures and Algorithms</option>
+                    </select>
+                </div>
+                <button type="submit" class="submit-btn">Submit Registration</button>
+            </form>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <p>&copy; 2026 Department of Computer Science & Engineering. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
